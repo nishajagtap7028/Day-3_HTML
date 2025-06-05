@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Structured Web Page Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+
+    .section {
+      margin-bottom: 40px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .highlight {
+      background-color: #f9f9f9;
+    }
+
+    /* Table Styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #aaa;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #eaeaea;
+    }
+
+    /* Form Styling */
+    form label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+    }
+
+    
+    .block-example {
+      background-color: #d9edf7;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .inline-example {
+      background-color: #f2dede;
+      padding: 5px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 1px solid #999;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="highlight">Project: Structured Web Page</h1>
+
+  <!-- 1. TABLE SECTION -->
+  <div class="section table-section">
+    <h2>Team Roles</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Role</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Leena deore</td>
+          <td>Designer</td>
+          <td>leena@example.com</td>
+        </tr>
+        <tr>
+          <td>Tans Londhe</td>
+          <td>Developer</td>
+          <td>tans@example.com</td>
+        </tr>
+        <tr>
+          <td>Trisha Thokk</td>
+          <td>Project Manager</td>
+          <td>trisha@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+ 
+  <div class="section form-section highlight">
+    <h2>Contact Form</h2>
+    <form>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="0">
+
+      <label for="topic">Topic:</label>
+      <select id="topic" name="topic">
+        <option value="support">Support</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+ 
+  <div class="section block-inline-section">
+    <h2>Block vs Inline Elements</h2>
+
+    <div class="block-example">
+      This is a <strong>block-level</strong> element (a &lt;div&gt;). It takes up the full width of its container.
+    </div>
+
+    <p>
+      This sentence contains <span class="inline-example">inline</span> elements like <em>&lt;span&gt;</em>. 
+      Inline elements flow within the text and do not start on a new line.
+    </p>
+
+   <div class="section highlight">
+    <h2>Embedded Webpage</h2>
+    <p>Below is an embedded external webpage (example.com):</p>
+    <iframe src="https://example.com" title="External Webpage"></iframe>
+  </div>
+
+  
+</body>
+</html>
